@@ -18,5 +18,13 @@ public class ResourceManager<T> where T : Resource
         }
         throw new NotImplementedException();
     }
+    public void CloseAll()
+    {
+        foreach (var r in _resources)
+        {
+            r.Close();
+        }
+        throw new NotImplementedException();
+    }
     
 }
