@@ -10,5 +10,13 @@ public class ResourceManager<T> where T : Resource
         _resources.Add(resource);
         throw new NotImplementedException();
     }
-   
+    public void OpenAll()
+    {
+        foreach (var r in _resources)
+        {
+            r.Open();
+        }
+        throw new NotImplementedException();
+    }
+    
 }
