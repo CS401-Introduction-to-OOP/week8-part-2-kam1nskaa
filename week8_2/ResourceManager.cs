@@ -8,7 +8,6 @@ public class ResourceManager<T> where T : Resource
     public void Add(T resource)
     {
         _resources.Add(resource);
-        throw new NotImplementedException();
     }
     public void OpenAll()
     {
@@ -16,7 +15,6 @@ public class ResourceManager<T> where T : Resource
         {
             r.Open();
         }
-        throw new NotImplementedException();
     }
     public void CloseAll()
     {
@@ -24,7 +22,6 @@ public class ResourceManager<T> where T : Resource
         {
             r.Close();
         }
-        throw new NotImplementedException();
     }
     
 }

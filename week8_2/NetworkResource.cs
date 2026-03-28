@@ -8,12 +8,10 @@ public class NetworkResource : Resource, IDisposable
     public override void Open()
     {
         IsOpen = true;
-        throw new NotImplementedException();
     }
     public override void Close()
     {
         IsOpen = false;
-        throw new NotImplementedException();
     }
     public void Dispose()
     {
